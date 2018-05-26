@@ -1,10 +1,9 @@
+# import das bibliotecas 
+library("corrplot")
+library("tidyr")
+
 # função para gerar as correlações das features de cada base
 gerarCorrelacao <- function(url_base, tipo, arquivo){
-  
-  # import das bibliotecas 
-  library("corrplot")
-  library("tidyr")
-  
  
   # montando o caminho do local onde encontra-se o dataset
   diretorio <- paste(url_base,tipo,arquivo, sep="/")
